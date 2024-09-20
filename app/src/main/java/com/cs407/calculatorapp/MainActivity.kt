@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity() {
         val additionButton = findViewById<Button>(R.id.additionButton)
         additionButton.setOnClickListener{
             try {
-                val input1 = editText1.text.toString().toInt()
-                val input2 = editText2.text.toString().toInt()
+                val input1 = editText1.text.toString().toInt().toDouble()
+                val input2 = editText2.text.toString().toInt().toDouble()
                 val result = input1 + input2
                 val intent = Intent(this, CalculatorActivity::class.java)
                 intent.putExtra("RESULT", result.toString())
@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
         val subtractionButton = findViewById<Button>(R.id.subtractionButton)
         subtractionButton.setOnClickListener{
             try {
-                val input1 = editText1.text.toString().toInt()
-                val input2 = editText2.text.toString().toInt()
+                val input1 = editText1.text.toString().toInt().toDouble()
+                val input2 = editText2.text.toString().toInt().toDouble()
                 val result = input1 - input2
                 val intent = Intent(this, CalculatorActivity::class.java)
                 intent.putExtra("RESULT", result.toString())
@@ -57,8 +57,8 @@ class MainActivity : AppCompatActivity() {
         val multiplicationButton = findViewById<Button>(R.id.multiplicationButton)
         multiplicationButton.setOnClickListener{
             try {
-                val input1 = editText1.text.toString().toInt()
-                val input2 = editText2.text.toString().toInt()
+                val input1 = editText1.text.toString().toInt().toDouble()
+                val input2 = editText2.text.toString().toInt().toDouble()
                 val result = input1 * input2
                 val intent = Intent(this, CalculatorActivity::class.java)
                 intent.putExtra("RESULT", result.toString())
@@ -72,8 +72,8 @@ class MainActivity : AppCompatActivity() {
         val divisionButton= findViewById<Button>(R.id.divisionButton)
         divisionButton.setOnClickListener{
             try {
-                val input1 = editText1.text.toString().toInt()
-                val input2 = editText2.text.toString().toInt()
+                val input1 = editText1.text.toString().toInt().toDouble()
+                val input2 = editText2.text.toString().toInt().toDouble()
                 val result = input1 / input2
                 val intent = Intent(this, CalculatorActivity::class.java)
                 intent.putExtra("RESULT", result.toString())
